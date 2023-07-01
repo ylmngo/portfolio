@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Certificate Gallery</title>
+  <style>
+    /* Define the styling for the gallery */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-image: url('media/black1.jpg');
+    }
+
+    body h1 {
+      color: rgb(255, 255, 255);
+        text-shadow:
+        -1px -1px 0 rgb(0, 0, 0),
+        1px -1px 0 rgb(0, 0, 0),
+        -1px 1px 0 rgb(0, 0, 0),
+        1px 1px 0 rgb(0, 0, 0),
+        0 0 20px #00F,
+        0 0 20px #00F;
+        font-size: 100px;
+    }
+
+    /* .certificate-image {
+      margin: 20px;
+      max-width: 30%;
+      min-width: 10%;
+      border-radius: 50px;
+      --optionBackground:url('media/ct1.png');
+      z-index: 1;
+    } */
+    body .certificate-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Added flex-wrap to allow wrapping on smaller screens */
+  align-items: stretch;
+  overflow: hidden;
+  min-width: 100%;
+  max-width: 100%;
+  width: calc(100% - 100px);
+  height: auto; /* Changed height to auto to allow flexibility */
+}
+
+body .certificate-image {
+  position: relative;
+  overflow: hidden;
+  width: 450px; /* Set the width to your desired size */
+  height: 300px; /* Set the height to match the width */
+  margin: 10px;
+  background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+  background-size: cover; /* Use 'cover' to maintain the aspect ratio */
+  background-position: center;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  box-shadow: 0 0 5px #00F, 0 0 20px #00F;
+  background-color: white;
+  border-radius: 30px;
+
+  
+}
+#ct1{
+    --optionBackground:url('media/ct1.png');
+}
+#ct2{
+    --optionBackground:url('media/ct2.png');
+}
+#ct3{
+    --optionBackground:url('media/ct3.png');
+   
+}
+#ct4{
+    --optionBackground:url('media/ct4.png');
+    background-position-x: -40px;
+}
+#ct5{
+    --optionBackground:url('media/ct5.png');
+    background-position-x: -90px;
+}
+#ct6{
+    --optionBackground:url('media/ct6.png');
+    background-position-x: -80px;
+}
+#ct7{
+    --optionBackground:url('media/ct7.png');
+    background-position-x: -60px;
+}
+#ct8{
+    --optionBackground:url('media/ct8.png');
+    background-position-x: -90px;
+}
+#ct9{
+    --optionBackground:url('media/ct9.png');
+    
+}
+#ct10{
+    --optionBackground:url('media/ct10.png');
+    background-position-x: -70px;
+}
+#ct11{
+    --optionBackground:url('media/ct11.png');
+    background-position-x: -70px;
+}
+#ct12{
+    --optionBackground:url('media/ct12.png');
+    background-position-x: -80px;
+}
+#ct13{
+    --optionBackground:url('media/ct13.png');
+    background-position-x: -40px;
+}
+#ct14{
+    --optionBackground:url('media/ct14.png');
+    background-position-x: -40px;
+}
+#ct15{
+    --optionBackground:url('media/ct15.png');
+    background-position-x: -80px;
+}
+#ct16{
+    --optionBackground:url('media/ct16.png');
+    background-position-x: -100px;
+}
+  </style>
+</head>
+<body>
+  <h1>Certificate Gallery</h1>
+
+  <div class="certificate-container">
+   <div class="certificate-image" id="ct1"></div>
+   <div class="certificate-image" id="ct2"></div>
+   <div class="certificate-image" id="ct3"></div>
+   <div class="certificate-image" id="ct4"></div>
+   <div class="certificate-image" id="ct5"></div>
+   <div class="certificate-image" id="ct6"></div>
+   <div class="certificate-image" id="ct7"></div>
+   <div class="certificate-image" id="ct8"></div>
+   <div class="certificate-image" id="ct9"></div>
+   <div class="certificate-image" id="ct10"></div>
+   <div class="certificate-image" id="ct11"></div>
+   <div class="certificate-image" id="ct12"></div>
+   <div class="certificate-image" id="ct13"></div>
+   <div class="certificate-image" id="ct14"></div>
+   <div class="certificate-image" id="ct15"></div>
+   <div class="certificate-image" id="ct16"></div>
+    <!-- Add more image elements for additional certificates -->
+  </div>
+</body>
+</html>
